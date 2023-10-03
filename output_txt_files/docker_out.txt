@@ -1,4 +1,4 @@
-* Serving Flask app "app" (lazy loading)
+ * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
@@ -6,14 +6,28 @@
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 294-705-839
-172.17.0.1 - - [02/Oct/2023 15:14:26] "GET / HTTP/1.1" 200 -
-[2023-10-02 15:16:19,683] INFO in app: JSON payload: 
+ * Debugger PIN: 132-810-686
+172.17.0.1 - - [03/Oct/2023 09:27:13] "GET / HTTP/1.1" 200 -
+[2023-10-03 09:28:36,422] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-10-02 15:16:19,697] INFO in app: Inference payload DataFrame: 
+[2023-10-03 09:28:36,463] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-10-02 15:16:19,705] INFO in app: Scaling Payload: 
+[2023-10-03 09:28:36,483] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [02/Oct/2023 15:16:19] "POST /predict HTTP/1.1" 200 
+[2023-10-03 09:28:36,488] INFO in app: Prediction: 
+[20.35373177134412]
+172.17.0.1 - - [03/Oct/2023 09:28:36] "POST /predict HTTP/1.1" 200 -
+172.17.0.1 - - [03/Oct/2023 09:54:35] "GET / HTTP/1.1" 200 -
+[2023-10-03 09:58:23,938] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2023-10-03 09:58:23,990] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-10-03 09:58:24,000] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-10-03 09:58:24,006] INFO in app: Prediction: 
+[20.35373177134412]
+172.17.0.1 - - [03/Oct/2023 09:58:24] "POST /predict HTTP/1.1" 200 -
