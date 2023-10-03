@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/raju-chekar/deploy4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/raju-chekar/deploy4/tree/main)
 
 ## Project Overview
 
@@ -48,3 +48,10 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+Files used:
+app.py            - Its an Application file.
+run_docker.sh     - Create docker image and start application.
+upload_docker.sh  - Upload docker image to docker repo.
+run_kubernetes.sh - Download docker image to kubernetes and start application.
+make_prediction.sh- To make predictions.
